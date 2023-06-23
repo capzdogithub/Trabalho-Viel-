@@ -18,3 +18,5 @@ Além disso, aplicamos o gradiente, a abertura e o fechamento em outras duas ima
 No final do código, há trechos comentados que mostram como exibir as imagens resultantes. Dependendo de onde o código está sendo executado, como no próprio computador ou no Google Colab, diferentes funções são usadas para exibir as imagens.
 
 Em resumo, o código nos mostra como usar a morfologia matemática para modificar objetos em imagens, como diminuir ou aumentar seu tamanho, destacar bordas e remover ruídos.
+
+O codigo identado e comentado se encontra no documento Codigo identado
