@@ -1,0 +1,60 @@
+],
+      "metadata": {#armazenar informaçoes
+        "id": "8whvZbKhU03S"
+      },
+      "execution_count": null,#Contar numero de vezes que foi executado
+      "outputs": []#usado para armazenar os resultados da execução de uma célula 
+    },
+    {
+      "cell_type": "code",# indica o tipo de célula 
+      "source": [#é onde está especificado o código fonte da célula
+        "erosion = cv2.erode(img,kernel,iterations = 2)\n",# Aplicar a erosão 
+        "dilation = cv2.dilate(img,kernel,iterations = 2)"# Aplicar a dilatação
+      ],
+      "metadata": {#armazenar informaçoes
+        "id": "RnKcRcjsU8VP"
+      },
+      "execution_count": null,#Contar numero de vezes que foi executado
+      "outputs": []#usado para armazenar os resultados da execução de uma célula 
+    },
+    {
+      "cell_type": "code",# indica o tipo de célula 
+      "source": [#é onde está especificado o código fonte da célula
+        "gradient = cv2.morphologyEx(img, cv2.MORPH_GRADIENT, kernel)\n",# Aplicar o gradiente, fechamento e a abertura
+        "opening = cv2.morphologyEx(img_opening, cv2.MORPH_OPEN, kernel)\n",# Aplicar o gradiente, fechamento e a abertura
+        "closing = cv2.morphologyEx(img_closing, cv2.MORPH_CLOSE, kernel)"# Aplicar o gradiente, fechamento e a abertura
+      ],
+      "metadata": {#armazenar informaçoes
+        "id": "WvTtlQWJU-tz"
+      },
+      "execution_count": null,#Contar numero de vezes que foi executado
+      "outputs": []#usado para armazenar os resultados da execução de uma célula 
+    },
+    {
+      "cell_type": "code",# indica o tipo de célula 
+      "source": [#é onde está especificado o código fonte da célula
+        "'''\n",# Exibi as imagens 
+        "#Caso usa com Python no próprio computador\n",
+        "cv2.imshow('in', img)\n",
+        "cv2.imshow('erosion_out', erosion)\n",
+        "cv2.imshow('dilation_out', dilation)\n",
+        "cv2.imshow('opening_out', opening)\n",
+        "cv2.imshow('closing_out', closing)\n",
+        "cv2.imshow('gradient_out', gradient)\n",
+        "'''\n",
+        "#Caso use o Google Colab\n",
+        "cv2_imshow(img)\n",
+        "cv2_imshow(erosion)\n",
+        "cv2_imshow(dilation)\n",
+        "cv2_imshow(opening)\n",
+        "cv2_imshow(closing)\n",
+        "cv2_imshow(gradient)"
+      ],
+      "metadata": {#armazenar informaçoes
+        "id": "iMJ7o6EgVA_r"
+      },
+      "execution_count": null,#Contar numero de vezes que foi executado
+      "outputs": []#usado para armazenar os resultados da execução de uma célula 
+    }
+  ]
+}
